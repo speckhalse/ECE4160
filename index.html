@@ -13085,7 +13085,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="About">About<a class="anchor-link" href="#About">&#182;</a></h2><p><img src="./img/me.jpg" alt="isolated" width="100"/>
-I am a junior ECE. This is where I will be posting content from ECE 4160 labs.</p>
+I am a junior ECE. Outside of class I enjoy running and working on the Formula SAE team. This is where I will be posting content from ECE 4160 labs.</p>
 
 </div>
 </div>
@@ -13093,7 +13093,8 @@ I am a junior ECE. This is where I will be posting content from ECE 4160 labs.</
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Index">Index<a class="anchor-link" href="#Index">&#182;</a></h2><p><a href="#lab_1">Lab 1</a></p>
+<h2 id="Index">Index<a class="anchor-link" href="#Index">&#182;</a></h2><p><a href="#lab_1">Lab 1</a><br>
+<a href="#lab_2">Lab 2</a></p>
 
 </div>
 </div>
@@ -13103,6 +13104,34 @@ I am a junior ECE. This is where I will be posting content from ECE 4160 labs.</
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Lab-1">Lab 1<a class="anchor-link" href="#Lab-1">&#182;</a></h2><p><a id='lab_1'></a>
 To familiarize ourselves with the Artemis Nano Board we ran several example programs through the Arduino IDE.</p>
+<h3 id="Setup">Setup<a class="anchor-link" href="#Setup">&#182;</a></h3><p>First I installed the Arduino IDE and supporting Apollo libraries. This was very straightforward due to documentation like <a href="https://learn.sparkfun.com/tutorials/artemis-development-with-arduino?_ga=2.30055167.1151850962.1594648676-1889762036.1574524297&amp;_gac=1.19903818.1593457111.Cj0KCQjwoub3BRC6ARIsABGhnyahkG7hU2v-0bSiAeprvZ7c9v0XEKYdVHIIi_-J-m5YLdDBMc2P_goaAtA4EALw_wcB">this</a>.<br>
+The the IDE with examples installed is shown below.<br>
+<img src="./img/lab1/example_code.png" alt="isolated" width="100"/></p>
+<h3 id="Example-Programs">Example Programs<a class="anchor-link" href="#Example-Programs">&#182;</a></h3><p>Next I ran example programs to test the functionality of the board. Running example code through Arduino IDE is very straightforward: examples both standard to Arduino and loaded specifically for the Apollo3 microcontroller can be selected from a dropdown in the IDE and compiled and run using the respective buttons.</p>
+<ul>
+<li><p>Blinking LED<br>
+The first example simply toggles a built-in LED on the Artemis board using the functions digitalWrite() and delay() which are built into Arduino. The only modification of the template code required is to specify the pin number of the built in LED, however this is handled throught the Arduino IDE via the macro LED_BUILTIN since the user specifies the board being used within the IDE.<br>
+<a href="https://youtube.com/shorts/HqcgEbv8VFo?feature=share" title="LED Blink"><img src="https://youtube.com/shorts/HqcgEbv8VFo?feature=share" alt="Blinking LEDs"></a></p>
+</li>
+<li><p>Serial I/O<br>
+The next program allows the user to interact with the board via the serial monitor in the Arduino IDE. The program prints the statement "printf supports printing formatted strings!" 10 times along with an incrementing counter. After this sample text is outputted, the user can input characters to the serial monitor and the board will "echo" or print out the characters entered. The program consists of functions including Serial.write, Serial.read and Serial.printf. In order for the example code to work on the Artemis board, I had to change the baud rate from the default of 9600 to 115200.<br>
+<img src="./img/lab1/serial_monitor.png" alt="isolated" width="100"/></p>
+</li>
+<li><p>Analog read (temperature sensor)<br>
+<img src="./img/lab1/temp.png" alt="isolated" width="100"/></p>
+</li>
+<li><p>Microphone<br>
+<img src="./img/lab1/mic.png" alt="isolated" width="100"/></p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Lab-2">Lab 2<a class="anchor-link" href="#Lab-2">&#182;</a></h2><p><a id='lab_2'></a></p>
 
 </div>
 </div>

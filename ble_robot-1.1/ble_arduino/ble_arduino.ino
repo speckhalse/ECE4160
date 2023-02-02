@@ -5,12 +5,12 @@
 #include <ArduinoBLE.h>
 
 //////////// BLE UUIDs ////////////
-#define BLE_UUID_TEST_SERVICE "9A48ECBA-2E92-082F-C079-9E75AAE428B1"
+#define BLE_UUID_TEST_SERVICE "6a8a7e88-0cef-49ab-bc17-6bf21b38c6fe"
 
-#define BLE_UUID_RX_STRING "9750f60b-9c9c-4158-b620-02ec9521cd99"
+#define BLE_UUID_RX_STRING "0ab6303c-54e3-435f-a17c-ec15a8b50123"
 
-#define BLE_UUID_TX_FLOAT "27616294-3063-4ecc-b60b-3470ddef2938"
-#define BLE_UUID_TX_STRING "f235a225-6735-4d73-94cb-ee5dfce9ba83"
+#define BLE_UUID_TX_FLOAT "8561f27b-7325-47ae-89ae-1fdd9b45a565"
+#define BLE_UUID_TX_STRING "ac3f2bdf-6622-4dd9-9cff-12591442444e"
 //////////// BLE UUIDs ////////////
 
 //////////// Global Variables ////////////
